@@ -26,7 +26,7 @@ SECRET_KEY = 'jlqn@8n663o(b!jtxg8wk7!%3rri!qg$+_xxw(-+1apdaha6-$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', 'CarZone.co', 'www.CarZone.co']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
