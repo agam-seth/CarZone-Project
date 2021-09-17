@@ -26,7 +26,7 @@ SECRET_KEY = 'jlqn@8n663o(b!jtxg8wk7!%3rri!qg$+_xxw(-+1apdaha6-$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', ]
+ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', '127.0.0.1']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 

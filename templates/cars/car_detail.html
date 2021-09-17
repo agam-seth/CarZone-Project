@@ -149,20 +149,18 @@
 
               </div>
           </div>
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-4 col-md-12 col-xs-12">
               <div class="sidebar-right">
                   <!-- Advanced search start -->
-                  <div class="widget advanced-search d-none-992">
+                  <div class="widget advanced-search">
                     {% if user.is_authenticated %}
                       <button class="btn btn-outline-danger bomd btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Send message</button>
                     {% else %}
                       <a href="{% url 'login' %}"><button class="btn btn-outline-danger bomd btn-block btn-lg">Login To Inquire</button></a>
                     {% endif %}
 
-
-
                       <br>
-                      <h3 class="sidebar-title">Refine Your Search</h3>
+                      <h3 class="sidebar-title">Characteristics</h3>
                       <ul>
                           <li>
                               <span>Color:</span>{{single_car.color}}
