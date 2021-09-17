@@ -26,7 +26,7 @@ SECRET_KEY = 'jlqn@8n663o(b!jtxg8wk7!%3rri!qg$+_xxw(-+1apdaha6-$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', 'CarZone.co', 'www.CarZone.co']
+ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', ]
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
@@ -159,7 +159,7 @@ MESSAGE_TAGS = {
 }
 
 #
-SITE_ID = 1
+SITE_ID = 3
 
 # Email Sending
 EMAIL_HOST = 'smtp.gmail.com'
