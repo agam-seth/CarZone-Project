@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jlqn@8n663o(b!jtxg8wk7!%3rri!qg$+_xxw(-+1apdaha6-$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['aqueous-depths-50650.herokuapp.com', 'CarZone.co', 'www.CarZone.co']
 
