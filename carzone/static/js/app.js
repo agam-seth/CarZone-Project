@@ -479,3 +479,8 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+// Message Time fadeOut
+setTimeout(function(){
+  $('#message').fadeOut('slow');
+}, 4000)

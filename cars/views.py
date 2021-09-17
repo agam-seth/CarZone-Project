@@ -23,7 +23,7 @@ def car_detail(request, id):
     }
     return render(request, 'cars/car_detail.html', data)
 
-def search(request):
+def search(request, id=None):
     all_cars = Car.objects.order_by('-created_date').all()
     cars = Car.objects.order_by('-created_date').all()
 
@@ -62,7 +62,6 @@ def search(request):
         max_price = request.GET['max_price']
         if max_price:
             cars = cars.filter(price__range=(min_price, max_price))
-
 
     data = {
         'cars': cars,
