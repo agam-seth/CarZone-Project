@@ -152,9 +152,9 @@
 
 .lg-toolbar {
     z-index: 1082;
-    left: 0;
+    left: 0px;
     position: absolute;
-    top: 0;
+    top: 80px;
     width: 100%
 }
 
@@ -434,15 +434,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-vimeo .lg-video-play {
-    
+
 }
 
 .lg-outer .lg-has-vimeo:hover .lg-video-play {
-    
+
 }
 
 .lg-outer .lg-has-html5 .lg-video-play {
-    
+
     height: 64px;
     margin-left: -32px;
     margin-top: -32px;
@@ -455,11 +455,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-youtube .lg-video-play {
-    
+
 }
 
 .lg-outer .lg-has-youtube:hover .lg-video-play {
-    
+
 }
 
 .lg-outer .lg-video-object {
@@ -910,7 +910,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-item {
-    
+
     display: none !important
 }
 

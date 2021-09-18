@@ -390,7 +390,9 @@ $(function () {
             dots: false,
             arrows: false,
             centerMode: true,
-            centerPadding: '0'
+            centerPadding: '0',
+            autoplay: true,
+            autoplaySpeed: 3000
         });
 
         $(this).closest('.slick-slider-area').find('.slick-prev').on("click", function () {

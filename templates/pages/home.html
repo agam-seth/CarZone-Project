@@ -112,19 +112,18 @@
 </div>
 <!-- Banner end -->
 
-<!-- Search box 2 end -->
-
 <!-- Featured car start -->
 <div class="featured-car content-area-5">
-    <div class="container">
+    <div class="container" style="padding: 20px; min-width: 480px; max-width: 480px; box-shadow: 0px 0px 50px 5px #ff0000;">
         <!-- Main title -->
         <div class="main-title">
             <h1>Featured <span>Cars</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
+
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 1}'>
 
               {% for car in featured_cars %}
                 <div class="slick-slide-item">
@@ -137,7 +136,7 @@
                                     <br>
                                     <span>${{car.price | intcomma}}</span>
                                 </div>
-                                <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px; object-fit:cover;">
+                                <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 270px; max-height: 270px; object-fit:cover;">
                             </a>
                             <div class="carbox-overlap-wrapper">
                                 <div class="overlap-box">

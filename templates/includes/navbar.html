@@ -65,6 +65,17 @@
                             Contact
                         </a>
                     </li>
+                    <li class="nav-item dropdown login-hide">
+                        <a
+                          {% if 'accounts/login' == request.path %}
+                          class="nav-link active"
+                          {% else %}
+                          class="nav-link"
+                          {% endif %}
+                          href="{% url 'login' %}">
+                            Login
+                        </a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a href="#full-page-search" class="nav-link h-icon">
                             <i class="fa fa-search"></i>
