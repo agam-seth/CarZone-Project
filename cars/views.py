@@ -57,6 +57,11 @@ def search(request, id=None):
         if body_style:
             cars = cars.filter(body_style__iexact=body_style)
 
+    if 'transmission' in request.GET:
+        transmission = request.GET['transmission']
+        if transmission:
+            cars = cars.filter(transmission__iexact=transmission)
+
     if 'min_price' in request.GET and 'max_price' in request.GET:
         min_price = request.GET['min_price']
         max_price = request.GET['max_price']
