@@ -22,42 +22,39 @@
   <!--   Dashboard Start   -->
 
   <div class="container mt-50 mb-50">
-  {% include 'includes/messages.html' %}
-  <div class="main-title" style="text-align:left !important;">
-          <h1>Welcome <span>User</span></h1>
-          <p>Here are the cars that you have inquired about</p>
-      </div>
-  <table class="table table-hover">
-  <thead>
-  <tr>
-    <th scope="col">Date & Time</th>
-    <th scope="col">Car Name</th>
-    <th scope="col">Regarding</th>
-    <th scope="col">Price</th>
-    <th scope="col">Action</th>
-  </tr>
-  </thead>
-  <tbody>
-    {% if inquires %}
-      {% for inquiry in inquires %}
+    {% include 'includes/messages.html' %}
+    <div class="main-title" style="text-align:left !important;">
+        <h1>Welcome <span>User</span></h1>
+        <p>Here are the cars that you have inquired about</p>
+    </div>
+    <table class="table table-hover">
+      <thead>
         <tr>
-          <th scope="row">{{inquiry.create_date}}</th>
-          <td>{{inquiry.car_title}}</td>
-          <td>{{inquiry.customer_need}}</td>
-          <td>${{inquiry.price}}</td>
-          <td><a href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-outline-dark">View Car</a></td>
+          <th scope="col">Date & Time</th>
+          <th scope="col">Car Name</th>
+          <th scope="col">Regarding</th>
+          <th scope="col">Price</th>
+          <th scope="col">Action</th>
         </tr>
-      {% endfor %}
-    {% else %}
-        <tr>
-          <td><p></p></td>
-          <td><p style="font-size:100px; margin-left: 80px; margin-top: 130px; margin-bottom: 130px;">&#128580;</p></td>
-          <td><p style="font-size:50px; margin-top: 130px; margin-bottom: 130px;">!!NO INQUIRES EXIST!!</p></td>
-        </tr>
+      </thead>
+      <tbody>
+        {% for inquiry in inquires %}
+          <tr>
+            <th scope="row">{{inquiry.create_date}}</th>
+            <td>{{inquiry.car_title}}</td>
+            <td>{{inquiry.customer_need}}</td>
+            <td>${{inquiry.price}}</td>
+            <td><a href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-outline-dark">View Car</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if not inquires %}
+    <div class="container-fluid text-center">
+      <div style="font-size: 5vw; display: inline;">&#128580;</div>
+      <div style="font-size: 3vw; display: inline; vertical-align: text-bottom">!! NO INQUIRES EXIST !!</div>
+    </div>
     {% endif %}
-
-  </tbody>
-  </table>
   </div>
 
   <!--   Dashboard End   -->
