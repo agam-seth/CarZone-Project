@@ -7,7 +7,7 @@ It is a website for used car sellers where,
 - owner can list all the cars and their features on this website
 - customer can access those data according to their preference and filters
 - they can inquire about any car using mail functionality
-- they can also register and login to this website to access thier dashboard
+- they can also register and login to this website to access their dashboard
 - login with Facebook and Google is also available
 - interacting and animated design
 - customized admin panel for owner
