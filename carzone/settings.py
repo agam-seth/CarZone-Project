@@ -165,7 +165,7 @@ SITE_ID = 3
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'agamseth281999@gmail.com'
-EMAIL_HOST_PASSWORD = 'iamuselessperson'
+EMAIL_HOST_PASSWORD = 'zuaaukhiljlwttns'
 EMAIL_USE_TLS = True
 
 # whitenoise Settings
