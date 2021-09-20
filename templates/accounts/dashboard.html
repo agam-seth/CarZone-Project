@@ -44,7 +44,7 @@
             <td>{{inquiry.car_title}}</td>
             <td>{{inquiry.customer_need}}</td>
             <td>${{inquiry.price}}</td>
-            <td><a href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-outline-dark">View Car</a></td>
+            <td><a style="font-size: 1vw;" href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-outline-dark">View Car</a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -52,7 +52,7 @@
     {% if not inquires %}
     <div class="container-fluid text-center">
       <div style="font-size: 5vw; display: inline;">&#128580;</div>
-      <div style="font-size: 3vw; display: inline; vertical-align: text-bottom">!! NO INQUIRES EXIST !!</div>
+      <div style="font-size: 3vw; display: inline; vertical-align: text-bottom;">!! NO INQUIRES EXIST !!</div>
     </div>
     {% endif %}
   </div>
